@@ -1,0 +1,125 @@
+<html>
+    <head>
+        <title>Matriz</title>
+        
+    </head>
+    <body>
+        
+        <p>
+            Como declarar uma matriz?
+            <h4 id="matriz"></h4>
+            Acessar o primeiro elemento
+            <h4 id="elemento1"></h4>
+            Acessar o ultimo elemento
+            <h4 id="elemento2"></h4>
+            Acessar comprimento da Matriz
+            <h4 id="comp"></h4>
+            Loop for na Matriz
+            <h4 id="for"></h4>
+            Adcionar elemento
+            <h4 id="add"></h4>
+            Criar Nova Matriz
+            <h4 id="nova"></h4>
+            Organizar Matriz
+            <h4 id="org"></h4>
+            Inverter Matriz
+            <h4 id="inv"></h4>
+            Números Matriz
+            <h4 id="num"></h4>
+            Encontrar maior numero na Matriz
+            <h4 id="max"></h4>
+            Encontrar menor numero na Matriz
+            <h4 id="min"></h4>
+
+            Atividade Adcional
+            Add item no inicio da matriz
+            <h4 id="inicio"></h4>
+            Remover item do inicio da matriz
+            <h4 id="rem"></h4>
+            Remover item do final da matriz
+            <h4 id="rem2"></h4>
+            Unir 2 Matrizes
+            <h4 id="unir"></h4>
+
+        </p>
+        <script>
+            var fruta = ["maçã", "melão", "uva"];
+            console.log(fruta);
+            document.getElementById("matriz").innerHTML = fruta;
+
+            var ele1 = fruta[0];
+            console.log(ele1);
+            document.getElementById("elemento1").innerHTML = ele1;
+
+            var ele2 = fruta[2];
+            console.log(ele2);
+            document.getElementById("elemento2").innerHTML = ele2;
+
+            var comp = fruta.length;
+            console.log(comp);
+            document.getElementById("comp").innerHTML = comp;
+
+            var loop = "";
+            for(i = 0; i < fruta.length; i++){
+                loop = loop + fruta [i] + "<br>"
+            }
+            console.log(loop);
+            document.getElementById("for").innerHTML = loop;
+
+            fruta.push("mamão");
+            console.log(fruta);
+            document.getElementById("add").innerHTML = fruta;
+
+            var letras = ["a", "c", "h", "e", "b", "d", "f", "g"];
+            console.log(letras);
+            document.getElementById("nova").innerHTML = letras;
+
+            letras.sort();
+            console.log(letras);
+            document.getElementById("org").innerHTML = letras;
+
+            letras.reverse();
+            console.log(letras);
+            document.getElementById("inv").innerHTML = letras;
+
+            var numero = ["2", "5", "4", "1", "3"];
+            console.log(numero);
+            document.getElementById("num").innerHTML = numero;
+
+            var maxN = Math.max.apply(Math, numero);
+            console.log(maxN);
+            document.getElementById("max").innerHTML = maxN;
+
+            var minN = Math.min.apply(Math, numero);
+            console.log(minN);
+            document.getElementById("min").innerHTML = minN;
+
+            //Atividade Adicional
+            fruta.unshift("abacaxi");
+            console.log(fruta);
+            document.getElementById("inicio").innerHTML = fruta;
+
+            fruta.shift();
+            console.log(fruta);
+            document.getElementById("rem").innerHTML = fruta;
+
+            fruta.pop();
+            console.log(fruta);
+            document.getElementById("rem2").innerHTML = fruta;
+
+            var unir1 = ["Brasil", "EUA", "Canada"];
+            var unir2 = ["Espanha", "Japão"];
+            var unir3 = unir1.concat(unir2);
+            console.log(unir1);
+            console.log(unir2);
+            console.log(unir3);
+            document.getElementById("unir").innerHTML = unir3;
+
+
+
+
+
+        </script>
+        
+    </body>
+</html>
